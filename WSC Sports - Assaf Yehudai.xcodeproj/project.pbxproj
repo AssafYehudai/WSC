@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		231C87282A0AD6D70067CB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231C87272A0AD6D70067CB36 /* Main.storyboard */; };
+		231C87292A0AD9BF0067CB36 /* Matches.json in Resources */ = {isa = PBXBuildFile; fileRef = 237135A82A0AC35B00A931C9 /* Matches.json */; };
+		2371358B2A0AC00F00A931C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2371358A2A0AC00F00A931C9 /* AppDelegate.swift */; };
+		2371358D2A0AC00F00A931C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2371358C2A0AC00F00A931C9 /* SceneDelegate.swift */; };
+		237135942A0AC01100A931C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237135932A0AC01100A931C9 /* Assets.xcassets */; };
+		237135972A0AC01100A931C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237135952A0AC01100A931C9 /* LaunchScreen.storyboard */; };
+		237135A72A0AC20D00A931C9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135A62A0AC20D00A931C9 /* AppCoordinator.swift */; };
+		237135AB2A0AC60D00A931C9 /* MatchGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135AA2A0AC60D00A931C9 /* MatchGame.swift */; };
+		237135AD2A0AC71700A931C9 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135AC2A0AC71700A931C9 /* Fixture.swift */; };
+		237135AF2A0AC7F400A931C9 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135AE2A0AC7F400A931C9 /* Goals.swift */; };
+		237135B12A0AC82200A931C9 /* Periods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135B02A0AC82200A931C9 /* Periods.swift */; };
+		237135B32A0AC86800A931C9 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135B22A0AC86800A931C9 /* League.swift */; };
+		237135B52A0AC88000A931C9 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135B42A0AC88000A931C9 /* Status.swift */; };
+		237135B72A0AC89D00A931C9 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135B62A0AC89D00A931C9 /* Venue.swift */; };
+		237135B92A0AC8CE00A931C9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135B82A0AC8CE00A931C9 /* Team.swift */; };
+		237135BB2A0ACBB500A931C9 /* MatchTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135BA2A0ACBB500A931C9 /* MatchTeams.swift */; };
+		237135BD2A0ACC7500A931C9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135BC2A0ACC7500A931C9 /* Score.swift */; };
+		237135BF2A0ACCB800A931C9 /* WscGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135BE2A0ACCB800A931C9 /* WscGame.swift */; };
+		237135C12A0ACCDC00A931C9 /* PrimeStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135C02A0ACCDC00A931C9 /* PrimeStory.swift */; };
+		237135C32A0ACCFF00A931C9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135C22A0ACCFF00A931C9 /* Page.swift */; };
+		237135C52A0ACD3D00A931C9 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135C42A0ACD3D00A931C9 /* EventType.swift */; };
+		237135C82A0ACDF200A931C9 /* MatchesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135C62A0ACDF200A931C9 /* MatchesScreen.swift */; };
+		237135C92A0ACDF200A931C9 /* MatchesScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237135C72A0ACDF200A931C9 /* MatchesScreen.xib */; };
+		237135CB2A0ACE1000A931C9 /* MatchesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135CA2A0ACE1000A931C9 /* MatchesScreenViewModel.swift */; };
+		237135CE2A0ACED000A931C9 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135CD2A0ACED000A931C9 /* Block.swift */; };
+		237135D12A0AD00B00A931C9 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237135D02A0AD00B00A931C9 /* AppRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		231C87272A0AD6D70067CB36 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		237135872A0AC00F00A931C9 /* WSC Sports - Assaf Yehudai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WSC Sports - Assaf Yehudai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2371358A2A0AC00F00A931C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2371358C2A0AC00F00A931C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		237135932A0AC01100A931C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		237135962A0AC01100A931C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		237135982A0AC01100A931C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237135A62A0AC20D00A931C9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		237135A82A0AC35B00A931C9 /* Matches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Matches.json; sourceTree = "<group>"; };
+		237135AA2A0AC60D00A931C9 /* MatchGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchGame.swift; sourceTree = "<group>"; };
+		237135AC2A0AC71700A931C9 /* Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		237135AE2A0AC7F400A931C9 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
+		237135B02A0AC82200A931C9 /* Periods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Periods.swift; sourceTree = "<group>"; };
+		237135B22A0AC86800A931C9 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		237135B42A0AC88000A931C9 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		237135B62A0AC89D00A931C9 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		237135B82A0AC8CE00A931C9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		237135BA2A0ACBB500A931C9 /* MatchTeams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTeams.swift; sourceTree = "<group>"; };
+		237135BC2A0ACC7500A931C9 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		237135BE2A0ACCB800A931C9 /* WscGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WscGame.swift; sourceTree = "<group>"; };
+		237135C02A0ACCDC00A931C9 /* PrimeStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeStory.swift; sourceTree = "<group>"; };
+		237135C22A0ACCFF00A931C9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		237135C42A0ACD3D00A931C9 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		237135C62A0ACDF200A931C9 /* MatchesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesScreen.swift; sourceTree = "<group>"; };
+		237135C72A0ACDF200A931C9 /* MatchesScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesScreen.xib; sourceTree = "<group>"; };
+		237135CA2A0ACE1000A931C9 /* MatchesScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesScreenViewModel.swift; sourceTree = "<group>"; };
+		237135CD2A0ACED000A931C9 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		237135D02A0AD00B00A931C9 /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		237135842A0AC00F00A931C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2371357E2A0AC00F00A931C9 = {
+			isa = PBXGroup;
+			children = (
+				237135892A0AC00F00A931C9 /* WSC Sports - Assaf Yehudai */,
+				237135882A0AC00F00A931C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		237135882A0AC00F00A931C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				237135872A0AC00F00A931C9 /* WSC Sports - Assaf Yehudai.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		237135892A0AC00F00A931C9 /* WSC Sports - Assaf Yehudai */ = {
+			isa = PBXGroup;
+			children = (
+				2371359F2A0AC14600A931C9 /* App */,
+				2371359E2A0AC03600A931C9 /* SupportFiles */,
+				237135A02A0AC16900A931C9 /* Common */,
+				237135A12A0AC17300A931C9 /* Modules */,
+			);
+			path = "WSC Sports - Assaf Yehudai";
+			sourceTree = "<group>";
+		};
+		2371359E2A0AC03600A931C9 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				237135982A0AC01100A931C9 /* Info.plist */,
+				237135932A0AC01100A931C9 /* Assets.xcassets */,
+				237135A82A0AC35B00A931C9 /* Matches.json */,
+				231C87272A0AD6D70067CB36 /* Main.storyboard */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		2371359F2A0AC14600A931C9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2371358A2A0AC00F00A931C9 /* AppDelegate.swift */,
+				2371358C2A0AC00F00A931C9 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		237135A02A0AC16900A931C9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				237135A22A0AC18400A931C9 /* Routing */,
+				237135CF2A0ACFB400A931C9 /* Repository */,
+				237135CC2A0ACEAF00A931C9 /* Protocols & Typealias */,
+				237135A92A0AC5EC00A931C9 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		237135A12A0AC17300A931C9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				237135A32A0AC19E00A931C9 /* Splash */,
+				237135A42A0AC1A900A931C9 /* MatchesScreen */,
+				237135A52A0AC1E700A931C9 /* StoryScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		237135A22A0AC18400A931C9 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				237135A62A0AC20D00A931C9 /* AppCoordinator.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		237135A32A0AC19E00A931C9 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				237135952A0AC01100A931C9 /* LaunchScreen.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		237135A42A0AC1A900A931C9 /* MatchesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				237135C62A0ACDF200A931C9 /* MatchesScreen.swift */,
+				237135C72A0ACDF200A931C9 /* MatchesScreen.xib */,
+				237135CA2A0ACE1000A931C9 /* MatchesScreenViewModel.swift */,
+			);
+			path = MatchesScreen;
+			sourceTree = "<group>";
+		};
+		237135A52A0AC1E700A931C9 /* StoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StoryScreen;
+			sourceTree = "<group>";
+		};
+		237135A92A0AC5EC00A931C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				237135AA2A0AC60D00A931C9 /* MatchGame.swift */,
+				237135BA2A0ACBB500A931C9 /* MatchTeams.swift */,
+				237135AC2A0AC71700A931C9 /* Fixture.swift */,
+				237135AE2A0AC7F400A931C9 /* Goals.swift */,
+				237135B02A0AC82200A931C9 /* Periods.swift */,
+				237135B22A0AC86800A931C9 /* League.swift */,
+				237135B42A0AC88000A931C9 /* Status.swift */,
+				237135B62A0AC89D00A931C9 /* Venue.swift */,
+				237135B82A0AC8CE00A931C9 /* Team.swift */,
+				237135BC2A0ACC7500A931C9 /* Score.swift */,
+				237135BE2A0ACCB800A931C9 /* WscGame.swift */,
+				237135C02A0ACCDC00A931C9 /* PrimeStory.swift */,
+				237135C22A0ACCFF00A931C9 /* Page.swift */,
+				237135C42A0ACD3D00A931C9 /* EventType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		237135CC2A0ACEAF00A931C9 /* Protocols & Typealias */ = {
+			isa = PBXGroup;
+			children = (
+				237135CD2A0ACED000A931C9 /* Block.swift */,
+			);
+			path = "Protocols & Typealias";
+			sourceTree = "<group>";
+		};
+		237135CF2A0ACFB400A931C9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				237135D02A0AD00B00A931C9 /* AppRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		237135862A0AC00F00A931C9 /* WSC Sports - Assaf Yehudai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2371359B2A0AC01100A931C9 /* Build configuration list for PBXNativeTarget "WSC Sports - Assaf Yehudai" */;
+			buildPhases = (
+				237135832A0AC00F00A931C9 /* Sources */,
+				237135842A0AC00F00A931C9 /* Frameworks */,
+				237135852A0AC00F00A931C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WSC Sports - Assaf Yehudai";
+			productName = "WSC Sports - Assaf Yehudai";
+			productReference = 237135872A0AC00F00A931C9 /* WSC Sports - Assaf Yehudai.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2371357F2A0AC00F00A931C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					237135862A0AC00F00A931C9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 237135822A0AC00F00A931C9 /* Build configuration list for PBXProject "WSC Sports - Assaf Yehudai" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2371357E2A0AC00F00A931C9;
+			productRefGroup = 237135882A0AC00F00A931C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				237135862A0AC00F00A931C9 /* WSC Sports - Assaf Yehudai */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		237135852A0AC00F00A931C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237135C92A0ACDF200A931C9 /* MatchesScreen.xib in Resources */,
+				237135972A0AC01100A931C9 /* LaunchScreen.storyboard in Resources */,
+				231C87292A0AD9BF0067CB36 /* Matches.json in Resources */,
+				237135942A0AC01100A931C9 /* Assets.xcassets in Resources */,
+				231C87282A0AD6D70067CB36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		237135832A0AC00F00A931C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237135A72A0AC20D00A931C9 /* AppCoordinator.swift in Sources */,
+				237135CB2A0ACE1000A931C9 /* MatchesScreenViewModel.swift in Sources */,
+				237135B72A0AC89D00A931C9 /* Venue.swift in Sources */,
+				237135C32A0ACCFF00A931C9 /* Page.swift in Sources */,
+				237135AB2A0AC60D00A931C9 /* MatchGame.swift in Sources */,
+				237135BF2A0ACCB800A931C9 /* WscGame.swift in Sources */,
+				237135C82A0ACDF200A931C9 /* MatchesScreen.swift in Sources */,
+				237135D12A0AD00B00A931C9 /* AppRepository.swift in Sources */,
+				237135B32A0AC86800A931C9 /* League.swift in Sources */,
+				237135B12A0AC82200A931C9 /* Periods.swift in Sources */,
+				237135AF2A0AC7F400A931C9 /* Goals.swift in Sources */,
+				237135C12A0ACCDC00A931C9 /* PrimeStory.swift in Sources */,
+				237135BB2A0ACBB500A931C9 /* MatchTeams.swift in Sources */,
+				237135BD2A0ACC7500A931C9 /* Score.swift in Sources */,
+				237135C52A0ACD3D00A931C9 /* EventType.swift in Sources */,
+				237135B92A0AC8CE00A931C9 /* Team.swift in Sources */,
+				237135B52A0AC88000A931C9 /* Status.swift in Sources */,
+				237135AD2A0AC71700A931C9 /* Fixture.swift in Sources */,
+				237135CE2A0ACED000A931C9 /* Block.swift in Sources */,
+				2371358B2A0AC00F00A931C9 /* AppDelegate.swift in Sources */,
+				2371358D2A0AC00F00A931C9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		237135952A0AC01100A931C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				237135962A0AC01100A931C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		237135992A0AC01100A931C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2371359A2A0AC01100A931C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2371359C2A0AC01100A931C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 649V78RSN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WSC Sports - Assaf Yehudai/SupportFiles/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.agritask.WSC-Sports---Assaf-Yehudai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2371359D2A0AC01100A931C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 649V78RSN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WSC Sports - Assaf Yehudai/SupportFiles/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.agritask.WSC-Sports---Assaf-Yehudai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		237135822A0AC00F00A931C9 /* Build configuration list for PBXProject "WSC Sports - Assaf Yehudai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237135992A0AC01100A931C9 /* Debug */,
+				2371359A2A0AC01100A931C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2371359B2A0AC01100A931C9 /* Build configuration list for PBXNativeTarget "WSC Sports - Assaf Yehudai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2371359C2A0AC01100A931C9 /* Debug */,
+				2371359D2A0AC01100A931C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2371357F2A0AC00F00A931C9 /* Project object */;
+}
