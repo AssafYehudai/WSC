@@ -15,11 +15,21 @@ class AppCoordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        repo = AppRepository()
+        navigationController.isNavigationBarHidden = true
+        repo = AppRepository(matchesProvider: MatchesJSONProvider())
     }
     
     func start() {
-        let vc = MatchesScreen(viewModel: MatchesScreenViewModel(repo: repo))
+        let viewModel = MatchesScreenViewModel(repo: repo, appCoordinator: self)
+        let vc = MatchesScreen(viewModel: viewModel)
         navigationController.show(vc, sender: nil)
+    }
+    
+    func openStory(for matchId: String) {
+        DispatchQueue.main.async { [weak self] in
+            let vc = StoryScreen()
+            vc.modalPresentationStyle = .overFullScreen
+            self?.navigationController.present(vc, animated: true)
+        }
     }
 }

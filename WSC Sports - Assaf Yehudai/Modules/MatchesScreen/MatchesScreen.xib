@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchesScreen" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
             <connections>
+                <outlet property="matchesTable" destination="e76-KL-ZNV" id="IXr-ad-2Vg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +19,18 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBJ-98-wVG">
-                    <rect key="frame" x="148" y="411.66666666666669" width="97" height="29"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="e76-KL-ZNV" customClass="MatchesTableView" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="MBJ-98-wVG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5oS-fe-zUJ"/>
-                <constraint firstItem="MBJ-98-wVG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k1K-TY-6YE"/>
+                <constraint firstItem="e76-KL-ZNV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Cwt-zb-awB"/>
+                <constraint firstItem="e76-KL-ZNV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HJU-fc-ybc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e76-KL-ZNV" secondAttribute="bottom" id="YEl-o1-HC1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e76-KL-ZNV" secondAttribute="trailing" id="ZuJ-sH-nqb"/>
             </constraints>
             <point key="canvasLocation" x="187" y="32"/>
         </view>

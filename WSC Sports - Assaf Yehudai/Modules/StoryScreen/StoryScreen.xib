@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoryScreen" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Yzf-YW-Vca" id="Eap-LJ-n4t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUe-cf-JaG" customClass="StoryPlayerView" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="94" width="393" height="724"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzf-YW-Vca">
+                    <rect key="frame" x="0.0" y="59" width="41.333333333333336" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didTapDismiss:" destination="-1" eventType="touchUpInside" id="Lnj-pb-Phq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wUe-cf-JaG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0ga-Ug-Z6s"/>
+                <constraint firstItem="wUe-cf-JaG" firstAttribute="top" secondItem="Yzf-YW-Vca" secondAttribute="bottom" id="JTo-eL-5QO"/>
+                <constraint firstItem="Yzf-YW-Vca" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jw6-VX-6qw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wUe-cf-JaG" secondAttribute="bottom" id="mji-qH-yjM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wUe-cf-JaG" secondAttribute="trailing" id="o74-Mu-3JQ"/>
+                <constraint firstItem="Yzf-YW-Vca" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qNQ-Ra-uwW"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
