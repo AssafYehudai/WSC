@@ -8,7 +8,7 @@
 import Foundation
 
 struct Page: Codable {
-    let duration: Int?
+    let duration: Int
     let paggeID: String?
     let videoURL: String?
     let title: String?

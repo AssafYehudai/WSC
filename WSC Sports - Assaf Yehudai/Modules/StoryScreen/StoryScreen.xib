@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="backButton" destination="Yzf-YW-Vca" id="Eap-LJ-n4t"/>
                 <outlet property="playerView" destination="wUe-cf-JaG" id="O4m-Ce-xHI"/>
+                <outlet property="progressBar" destination="ymJ-di-cRh" id="Is7-HG-NXm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,11 +24,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUe-cf-JaG" customClass="StoryPlayerView" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
-                    <rect key="frame" x="16" y="94" width="361" height="708"/>
+                    <rect key="frame" x="16" y="103.33333333333331" width="361" height="698.66666666666674"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzf-YW-Vca">
-                    <rect key="frame" x="0.0" y="59" width="41.333333333333336" height="35"/>
+                    <rect key="frame" x="0.0" y="59" width="41.666666666666664" height="34.333333333333343"/>
+                    <color key="tintColor" systemColor="systemPinkColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain">
                         <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
@@ -36,16 +38,25 @@
                         <action selector="didTapDismiss:" destination="-1" eventType="touchUpInside" id="Lnj-pb-Phq"/>
                     </connections>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ymJ-di-cRh" customClass="StoryProgressBar" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="93.333333333333329" width="393" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="25j-4X-T97"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ymJ-di-cRh" secondAttribute="trailing" id="0LI-Rv-aYE"/>
                 <constraint firstItem="wUe-cf-JaG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0ga-Ug-Z6s"/>
-                <constraint firstItem="wUe-cf-JaG" firstAttribute="top" secondItem="Yzf-YW-Vca" secondAttribute="bottom" id="JTo-eL-5QO"/>
+                <constraint firstItem="wUe-cf-JaG" firstAttribute="top" secondItem="ymJ-di-cRh" secondAttribute="bottom" id="AUE-Zz-Wvg"/>
+                <constraint firstItem="ymJ-di-cRh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jth-uI-RMj"/>
                 <constraint firstItem="Yzf-YW-Vca" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jw6-VX-6qw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wUe-cf-JaG" secondAttribute="bottom" constant="16" id="mji-qH-yjM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wUe-cf-JaG" secondAttribute="trailing" constant="16" id="o74-Mu-3JQ"/>
                 <constraint firstItem="Yzf-YW-Vca" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qNQ-Ra-uwW"/>
+                <constraint firstItem="ymJ-di-cRh" firstAttribute="top" secondItem="Yzf-YW-Vca" secondAttribute="bottom" id="wNv-mM-NpZ"/>
             </constraints>
             <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
         </view>
@@ -54,6 +65,9 @@
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

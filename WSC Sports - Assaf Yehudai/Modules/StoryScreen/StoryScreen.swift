@@ -6,14 +6,19 @@
 //
 
 import UIKit
+import Combine
 
 class StoryScreen: UIViewController {
+    
+    // MARK: - Subscriptions
+    private var subsciptions = Set<AnyCancellable>()
 
     // MARK: - Properties
     private var viewModel: StoryScreenViewModel!
     
     // MARK: - IBOulets
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var progressBar: StoryProgressBar!
     @IBOutlet weak var playerView: StoryPlayerView!
     
     // MARK: - Constructor
@@ -31,6 +36,12 @@ class StoryScreen: UIViewController {
         super.viewDidLoad()
         backButton.setTitle("", for: .normal)
         playerView.loadPages(pages: viewModel.getPages())
+        playerView.$currentPageIndex
+            .receive(on: DispatchQueue.main)
+            .sink {[weak self] index in
+                self?.progressBar.currentIndex = index ?? 0
+            }.store(in: &subsciptions)
+        progressBar.setupFragments(for: viewModel.getDurations())
     }
     
     // MARK: - IBActions

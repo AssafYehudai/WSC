@@ -48,6 +48,9 @@
 		23CC78402A0C333D0092C8A4 /* MatchesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC783F2A0C333D0092C8A4 /* MatchesTableView.swift */; };
 		23CC78432A0C361B0092C8A4 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC78412A0C361B0092C8A4 /* MatchTableViewCell.swift */; };
 		23CC78442A0C361B0092C8A4 /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CC78422A0C361B0092C8A4 /* MatchTableViewCell.xib */; };
+		23D4B2DB2A1155B900915F00 /* Nibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D4B2DA2A1155B900915F00 /* Nibable.swift */; };
+		23D4B2DD2A11569A00915F00 /* ProgressFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D4B2DC2A11569A00915F00 /* ProgressFragment.swift */; };
+		23D4B2DF2A1156A700915F00 /* ProgressFragment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D4B2DE2A1156A700915F00 /* ProgressFragment.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +97,9 @@
 		23CC783F2A0C333D0092C8A4 /* MatchesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableView.swift; sourceTree = "<group>"; };
 		23CC78412A0C361B0092C8A4 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		23CC78422A0C361B0092C8A4 /* MatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchTableViewCell.xib; sourceTree = "<group>"; };
+		23D4B2DA2A1155B900915F00 /* Nibable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibable.swift; sourceTree = "<group>"; };
+		23D4B2DC2A11569A00915F00 /* ProgressFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressFragment.swift; sourceTree = "<group>"; };
+		23D4B2DE2A1156A700915F00 /* ProgressFragment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressFragment.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				237135CD2A0ACED000A931C9 /* Block.swift */,
+				23D4B2DA2A1155B900915F00 /* Nibable.swift */,
 			);
 			path = "Protocols & Typealias";
 			sourceTree = "<group>";
@@ -309,8 +316,8 @@
 		23A2C2952A0FA61F0027EE5C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				23A2C2962A0FA66A0027EE5C /* StoryPlayerView.swift */,
-				23A2C3002A10B74D0027EE5C /* StoryProgressBar.swift */,
+				23D4B2D52A11305500915F00 /* ProgressBar */,
+				23D4B2D42A11304900915F00 /* Player */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -322,6 +329,24 @@
 				23A2C2FE2A1000230027EE5C /* VideoCache.swift */,
 			);
 			path = Cache;
+			sourceTree = "<group>";
+		};
+		23D4B2D42A11304900915F00 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				23A2C2962A0FA66A0027EE5C /* StoryPlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		23D4B2D52A11305500915F00 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				23A2C3002A10B74D0027EE5C /* StoryProgressBar.swift */,
+				23D4B2DC2A11569A00915F00 /* ProgressFragment.swift */,
+				23D4B2DE2A1156A700915F00 /* ProgressFragment.xib */,
+			);
+			path = ProgressBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +412,7 @@
 				231C87292A0AD9BF0067CB36 /* Matches.json in Resources */,
 				237135942A0AC01100A931C9 /* Assets.xcassets in Resources */,
 				23A2C29B2A0FA6B30027EE5C /* StoryScreen.xib in Resources */,
+				23D4B2DF2A1156A700915F00 /* ProgressFragment.xib in Resources */,
 				231C87282A0AD6D70067CB36 /* Main.storyboard in Resources */,
 				23CC78442A0C361B0092C8A4 /* MatchTableViewCell.xib in Resources */,
 			);
@@ -412,9 +438,11 @@
 				237135BF2A0ACCB800A931C9 /* WscGame.swift in Sources */,
 				237135C82A0ACDF200A931C9 /* MatchesScreen.swift in Sources */,
 				237135D12A0AD00B00A931C9 /* AppRepository.swift in Sources */,
+				23D4B2DB2A1155B900915F00 /* Nibable.swift in Sources */,
 				237135B32A0AC86800A931C9 /* League.swift in Sources */,
 				237135B12A0AC82200A931C9 /* Periods.swift in Sources */,
 				237135AF2A0AC7F400A931C9 /* Goals.swift in Sources */,
+				23D4B2DD2A11569A00915F00 /* ProgressFragment.swift in Sources */,
 				237135C12A0ACCDC00A931C9 /* PrimeStory.swift in Sources */,
 				237135BB2A0ACBB500A931C9 /* MatchTeams.swift in Sources */,
 				237135BD2A0ACC7500A931C9 /* Score.swift in Sources */,

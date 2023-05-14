@@ -21,4 +21,8 @@ class StoryScreenViewModel {
     func getPages() -> [Page]? {
         return repo.getStoryPages(for: matchId)
     }
+    
+    func getDurations() -> [Double]? {
+        return getPages()?.map { Double($0.duration/1000) }
+    }
 }

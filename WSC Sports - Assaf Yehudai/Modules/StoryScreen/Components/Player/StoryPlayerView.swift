@@ -7,14 +7,15 @@
 
 import UIKit
 import AVFoundation
+import Combine
 
-class StoryPlayerView: UIView {
+class StoryPlayerView: UIView, ObservableObject {
     
     // MARK: - Properties
     private var cache = VideoCache()
     private var pages: [Page]?
     private var count: Int { return pages?.count ?? 0 }
-    private var currentPageIndex: Int! {
+    @Published var currentPageIndex: Int! {
         didSet { playCurrentPageIndex() }
     }
     
@@ -33,7 +34,6 @@ class StoryPlayerView: UIView {
         super.init(coder: coder)
         backgroundColor = .clear
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapSnap)))
-        
         NotificationCenter.default
             .addObserver(self,
                          selector: #selector(playerDidFinishPlaying),
@@ -50,7 +50,7 @@ class StoryPlayerView: UIView {
     // MARK: - Private Helpers
     private func playCurrentPageIndex() {
         Task {
-            guard let path = await fetchFile(with: currentPageIndex) else { return }
+            guard let path = await fetchFile(with: currentPageIndex!) else { return }
             currentAsset = AVAsset(url: path)
         }
     }
