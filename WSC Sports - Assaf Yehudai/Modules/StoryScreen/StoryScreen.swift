@@ -19,7 +19,7 @@ class StoryScreen: UIViewController {
     // MARK: - IBOulets
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var progressBar: StoryProgressBar!
-    @IBOutlet weak var playerView: StoryPlayerView!
+    @IBOutlet weak var playerView: StoryPlayer!
     
     // MARK: - Constructor
     init(viewModel: StoryScreenViewModel) {
@@ -35,12 +35,14 @@ class StoryScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         backButton.setTitle("", for: .normal)
-        playerView.loadPages(pages: viewModel.getPages())
-        playerView.$currentPageIndex
+        
+        let playerViewModel = StoryPlayerViewModel(pages: viewModel.getPages())
+        playerViewModel.$currentPageIndex
             .receive(on: DispatchQueue.main)
             .sink {[weak self] index in
                 self?.progressBar.currentIndex = index ?? 0
             }.store(in: &subsciptions)
+        playerView.setup(viewModel: playerViewModel)
         progressBar.setupFragments(for: viewModel.getDurations())
     }
     

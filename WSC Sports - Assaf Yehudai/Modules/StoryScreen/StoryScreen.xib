@@ -23,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUe-cf-JaG" customClass="StoryPlayerView" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUe-cf-JaG" customClass="StoryPlayer" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
                     <rect key="frame" x="16" y="103.33333333333331" width="361" height="698.66666666666674"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
