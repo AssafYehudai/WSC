@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoryScreen" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
             <connections>
                 <outlet property="backButton" destination="Yzf-YW-Vca" id="Eap-LJ-n4t"/>
+                <outlet property="playerView" destination="wUe-cf-JaG" id="O4m-Ce-xHI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUe-cf-JaG" customClass="StoryPlayerView" customModule="WSC_Sports___Assaf_Yehudai" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="94" width="393" height="724"/>
+                    <rect key="frame" x="16" y="94" width="361" height="708"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzf-YW-Vca">
@@ -39,11 +40,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="wUe-cf-JaG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0ga-Ug-Z6s"/>
+                <constraint firstItem="wUe-cf-JaG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0ga-Ug-Z6s"/>
                 <constraint firstItem="wUe-cf-JaG" firstAttribute="top" secondItem="Yzf-YW-Vca" secondAttribute="bottom" id="JTo-eL-5QO"/>
                 <constraint firstItem="Yzf-YW-Vca" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jw6-VX-6qw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wUe-cf-JaG" secondAttribute="bottom" id="mji-qH-yjM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wUe-cf-JaG" secondAttribute="trailing" id="o74-Mu-3JQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wUe-cf-JaG" secondAttribute="bottom" constant="16" id="mji-qH-yjM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wUe-cf-JaG" secondAttribute="trailing" constant="16" id="o74-Mu-3JQ"/>
                 <constraint firstItem="Yzf-YW-Vca" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qNQ-Ra-uwW"/>
             </constraints>
             <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>

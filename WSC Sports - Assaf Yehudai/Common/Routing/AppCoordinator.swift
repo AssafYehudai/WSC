@@ -26,10 +26,11 @@ class AppCoordinator {
     }
     
     func openStory(for matchId: String) {
-        DispatchQueue.main.async { [weak self] in
-            let vc = StoryScreen()
+        DispatchQueue.main.async { [unowned self] in
+            let viewModel = StoryScreenViewModel(repo: self.repo, matchId: matchId)
+            let vc = StoryScreen(viewModel: viewModel)
             vc.modalPresentationStyle = .overFullScreen
-            self?.navigationController.present(vc, animated: true)
+            self.navigationController.present(vc, animated: true)
         }
     }
 }

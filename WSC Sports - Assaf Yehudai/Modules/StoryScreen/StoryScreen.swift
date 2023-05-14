@@ -9,16 +9,31 @@ import UIKit
 
 class StoryScreen: UIViewController {
 
-    @IBOutlet weak var backButton: UIButton!
+    // MARK: - Properties
+    private var viewModel: StoryScreenViewModel!
     
+    // MARK: - IBOulets
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var playerView: StoryPlayerView!
+    
+    // MARK: - Constructor
+    init(viewModel: StoryScreenViewModel) {
+        super.init(nibName: "StoryScreen", bundle: .main)
+        self.viewModel = viewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         backButton.setTitle("", for: .normal)
-        // Do any additional setup after loading the view.
+        playerView.loadPages(pages: viewModel.getPages())
     }
-
-
     
+    // MARK: - IBActions
     @IBAction func didTapDismiss(_ sender: Any) {
         dismiss(animated: true)
     }

@@ -9,7 +9,7 @@ import UIKit
 
 extension UIImageView {
     
-    private var imageRepo: ImageRepository {
+    private var imageRepo: ImagesCache {
         return .shared
     }
     

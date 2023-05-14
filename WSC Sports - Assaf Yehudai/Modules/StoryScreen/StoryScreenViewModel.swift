@@ -9,10 +9,16 @@ import Foundation
 import AVFoundation
 
 class StoryScreenViewModel {
-//    
-//    private var repo: AppRepository
-//    private var players: [AVPlayer]
-//    var storyItems: [StoryPageItem]
-//    
-    init(repo: AppRepository, matchId: String) {}
+
+    private var repo: AppRepository
+    private var matchId: String
+    
+    init(repo: AppRepository, matchId: String) {
+        self.repo = repo
+        self.matchId = matchId
+    }
+    
+    func getPages() -> [Page]? {
+        return repo.getStoryPages(for: matchId)
+    }
 }

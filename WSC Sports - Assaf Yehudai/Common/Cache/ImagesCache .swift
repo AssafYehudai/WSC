@@ -1,5 +1,5 @@
 //
-//  ImagesRepository.swift
+//  ImagesCache.swift
 //  WSC Sports - Assaf Yehudai
 //
 //  Created by assaf yehudai on 13/05/2023.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-class ImageRepository {
+class ImagesCache {
     
     private var cache: URLCache
-    static let shared = ImageRepository()
+    static let shared = ImagesCache()
     
     init(cache: URLCache = .shared) {
         self.cache = cache
